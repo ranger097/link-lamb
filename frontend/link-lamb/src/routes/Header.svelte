@@ -1,0 +1,22 @@
+<script>
+       
+</script>
+
+<header class="header-bar">
+ 
+
+    <div class="header-bar-icon-background">
+       <svg class="w-6 h-6 text-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+</svg>
+
+    </div>
+
+     <div class="header-logo">
+        <img src="/src/images/link-lamb-final.png" alt="link lamb logo" width="100vw">
+    </div>
+
+
+</header>
+
+
