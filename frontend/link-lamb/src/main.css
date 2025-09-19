@@ -1,8 +1,9 @@
 body , html{
     margin: 0px;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(225deg, rgb(255, 255, 255), rgb(120, 120, 120));
     overflow-x: hidden;
     font-size: 1rem;
+    
 }
 
 .header-bar-icon-background {
@@ -31,8 +32,9 @@ body , html{
 
 
 .header-bar {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
+
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
     width: 100vw;
     padding: 4vw 2vw 3vw 2vw;
     display: flex;
@@ -40,8 +42,11 @@ body , html{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    filter: invert();
+    backdrop-filter: blur(10px);
+    position: absolute;
+
 }
+
 
 .footer-bar {
    
@@ -50,12 +55,14 @@ body , html{
     background-color: rgba(0, 0, 255, 0);
     align-items: center;
     padding: 2vw 5vw 5vw 5vw;
+    position: absolute;
+    bottom: 0vh;
     
 }
 
 
 .footer-bar-icon-background {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 100px;
     box-shadow: -2px 4px 7px rgba(0, 0, 0, 0.3);
@@ -63,44 +70,100 @@ body , html{
     padding: 3vw;
     margin: 3vw 3vw 1vw 3vw;
     color: rgba(250, 235, 215, 0.9);
+    display: block;
 }
 
 
 .footer-bar-icon-background:hover {
 
-    background-color: purple;
+    background-color: rgba(255, 0, 0, 0.8);
 
 
 
 }
 
 .full-site {
-    background: linear-gradient(225deg, rgb(255, 255, 255), rgb(120, 120, 120));
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
     height: 100vh;
     margin: 0px;
-
+    background-color: #00000000;
+    
 
 }
 
 
 
 .main-page {
-    background-color: rgba(0, 0, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     height: 100vh;
     width: 100vw;
     padding: 4vw;
+    margin-top: 5vh;
 }
 
 
 
+.settings-background {
+    background-color: rgba(255, 0, 0, 0);
+    min-width: 100vw;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 10vw 5vw 5vw 5vw;
+   gap:3vh;
+   margin-top: 7vh;
+   margin-bottom: 100vh;
+   
+}
+
+
+.settings-section-background {
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+    min-width: 90vw;
+    padding: 3vw 3vw 3vw 5vw;
+    border-radius: 10px;
+    gap: 2vw;
+    box-shadow: -2px 4px 7px rgba(0, 0, 0, 0.3);
 
 
 
+}
 
 
 
+.main-page-section {
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 8vw;
+    backdrop-filter: blur(10px);
+    box-shadow: -2px 4px 7px rgba(0, 0, 0, 0.3);
+    min-width: 90vw;
+    margin-top: 5vw;
+    
+}
 
+.main-page-section:hover {
+    scale:1.1;
+}
+
+.main-page-section-title {
+    color: #ffffff;
+}
+
+.main-page-section-content {
+    color: #c5c5c5;
+}
+
+
+.whole-page {
+    background-color: rgba(0, 0, 255, 0);
+    padding-bottom:810vh;
+}

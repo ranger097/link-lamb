@@ -4,12 +4,12 @@
     import Home from "./Home.svelte";
     import Menu from "./Menu.svelte";
     import '/src/main.css';
+   
 </script>
 
 
 <main class="full-site">
-    <Header />    
+    <Header />   
     <Home />
+    </main>
     <Footer/>
-
-</main>
