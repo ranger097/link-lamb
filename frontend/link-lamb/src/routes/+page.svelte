@@ -11,5 +11,6 @@
 <main class="full-site">
     <Header />   
     <Home />
-    </main>
     <Footer/>
+    </main>
+    

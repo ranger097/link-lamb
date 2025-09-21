@@ -17,7 +17,7 @@
 </button>
 
      <div class="header-logo">
-        <img src="/src/images/link-lamb-final.png" alt="link lamb logo" width="100vw">
+        <img src="/src/images/link-lamb-colorless1.png" alt="link lamb logo" width="100vw">
     </div>
 
 
