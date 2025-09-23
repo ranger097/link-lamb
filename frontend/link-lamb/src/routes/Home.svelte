@@ -32,8 +32,7 @@
         <img src="" alt="">
         {/if}-->
         <p class="main-page-section-title">{item.title}</p>
-        <p class="main-page-section-content">{@html item.content_text// || item.content_html}</p>
-         }</p> 
+        <p class="main-page-section-content">{@html item.content_text || item.content_html}</p>
              <div class="reaction-container">
     <section class="reaction-section">
         <div class="upvote">
@@ -67,4 +66,3 @@
     {/each}
 </main>
 </div>
-

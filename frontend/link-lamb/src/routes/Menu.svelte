@@ -1,15 +1,23 @@
 <script>
 
+let showMenu = true;
+function toggleMenu() {
+    showMenu = !showMenu
+}
 </script>
 
+
+
+{#if showMenu}
 <main class="settings-background">
+    
     <section class="settings-section-background">
         <div>
                 <svg class="w-6 h-6 text-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M10 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h2m10 1a3 3 0 0 1-3 3m3-3a3 3 0 0 0-3-3m3 3h1m-4 3a3 3 0 0 1-3-3m3 3v1m-3-4a3 3 0 0 1 3-3m-3 3h-1m4-3v-1m-2.121 1.879-.707-.707m5.656 5.656-.707-.707m-4.242 0-.707.707m5.656-5.656-.707.707M12 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                </svg>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+            </svg>
         </div>
-        <p>Home</p>
+        <p>Home </p>
     </section>
 
     <section class="settings-section-background">
@@ -58,6 +66,41 @@
 </svg>
 
         </div>
-        <p>Contact us</p>
+        <p>Support</p>
     </section>
+
+    <section class="settings-section-background">
+        <div>
+              <svg class="w-6 h-6 text-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"/>
+</svg>
+
+
+        </div>
+        <p>Donate</p>
+    </section>
+
+    <section class="settings-section-background">
+        <div>
+              <svg class="w-6 h-6 text-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg>
+
+
+        </div>
+        <p>Info</p>
+    </section>
+
+
+
+
+
+
+     <button onclick={toggleMenu} aria-label="dssd">
+                <svg class="w-6 h-6 text-800 dark:text-white close-button" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+</svg>
+</button>
+        <p class="close-menu">Close</p>
 </main> 
+{/if}
