@@ -5,14 +5,21 @@
         showMenu = !showMenu;
     }
 
-    let y;
-    let showHeader = true;
+    let scrollY = 0;
+    let prevScrollY = 0;
+    let scrolled = true;
+    function itsScrolled() {
+      scrolled = window.scrollY < prevScrollY;
+      prevScrollY = window.scrollY;
+    }
+    
+
      
   
 </script>
 
 
-{#if y < 50}
+{#if scrolled}
 <header class="header-bar">
 
     <button class="header-bar-icon-background" on:click={toggleMenu} aria-label="menu_button">
@@ -34,4 +41,4 @@
     <Menu />
     {/if}
 
-<svelte:window bind:scrollY={y} />
+<svelte:window onscroll={itsScrolled} bind:scrollY />

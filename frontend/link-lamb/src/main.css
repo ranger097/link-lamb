@@ -127,13 +127,14 @@ body {
     align-items: center;
     gap:3vh;
     padding-top: 4vh;
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
     overflow: hidden;
     position: fixed;
     z-index: 2;
     top: 0px;
+    background-image: url('/src/images/135376.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 

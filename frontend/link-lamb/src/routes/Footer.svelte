@@ -1,8 +1,14 @@
 <script>
-    let y;
+    let scrollY = 0;
+    let prevScrollY = 0;
+    let scrollingUp = true;
+    function handleScroll() {
+      scrollingUp = window.scrollY < prevScrollY;
+      prevScrollY = window.scrollY;
+    }
 </script>
 
-{#if y < 50}
+{#if scrollingUp}
 <footer class="footer-bar">
     <div class="footer-bar-icon-background footer-bar-icons-anime-1">
        <svg class="w-6 h-6 text-800 dark:text-white footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -42,4 +48,4 @@
 </footer>
 {/if}
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window onscroll={handleScroll} bind:scrollY/>
