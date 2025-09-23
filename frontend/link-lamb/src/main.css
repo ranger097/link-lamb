@@ -118,7 +118,6 @@ body {
 
 
 .settings-background {
-    background-color: rgba(255, 0, 0, 0);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -131,19 +130,28 @@ body {
     position: fixed;
     z-index: 2;
     top: 0px;
-    background-image: url('/src/images/135376.jpg');
+  backdrop-filter: blur(50px);
+}
+
+
+.behind-settings {
+     width: 100vw;
+    height: 100vh;
+      background-image: url('/src/images/135376.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+     position: fixed;
+    z-index: 2;
+    top: 0px;
 }
-
 
 .settings-section-background {
     display: flex;
     color: #ffffff;
     background-color: #000000;
     width: 90vw;
-    padding: 1vh 5vw 1vh 5vw;
+    padding: 1.5vh 5vw 1.5vh 5vw;
     border-radius: 15px;
     gap: 4vw;
     box-shadow: -2px 4px 7px rgba(0, 0, 0, 0.3);

@@ -9,6 +9,7 @@ function toggleMenu() {
 
 
 {#if showMenu}
+<div class="behind-settings">
 <main class="settings-background">
     
     <section class="settings-section-background">
@@ -103,4 +104,5 @@ function toggleMenu() {
 </button>
         <p class="close-menu">Close</p>
 </main> 
+</div>
 {/if}
