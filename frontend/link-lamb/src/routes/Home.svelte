@@ -27,18 +27,19 @@
 <main class="main-page">
     
     {#each items as item}
+    <section class="spacer">
+        </section>
     <section class="main-page-section">
+          
         {#if item.image}
         <img src="" alt="">
         {/if}
         <p class="main-page-section-title">{item.title}</p>
         <p class="main-page-section-content">{@html item.content_text || item.content_html}</p>
-             <div class="reaction-container">
-    <section class="reaction-section">
-        
-    </section>
-             </div>
-    </section>
+             
+      
+
+
     <section class="the-whole-comment-section">
 <article class="the-container-to-hold-top-row">
     <section class="the-comments-section">
@@ -80,6 +81,21 @@
                     </svg>
                 </button>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
     {/each}
 </main>
 </div>
