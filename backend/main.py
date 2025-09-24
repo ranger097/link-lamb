@@ -8,6 +8,8 @@ CORS(app)
 
 FEED_URL = 'https://rss.app/feeds/v1.1/5cjiURcmbwsrcuPD.json'
 
+Link_Lamb_Reddit = 'https://www.reddit.com/r/link_lamb/.rss'
+
 @app.route("/feed")
 def redditFeed():
     try :
@@ -18,8 +20,14 @@ def redditFeed():
     except requests.RequestException as e:
         return jsonify({"error": str(e)}), 500
 
-
-
+@app.route("/reddit")
+def LinkLambFeed():
+    try:
+        res = requests.get(Link_Lamb_Reddit)
+        res.raise_for_status()
+        feed_data = res.json()
+    except:
+        print("oops")
 
 
 
