@@ -14,6 +14,8 @@
   {#each repos as repo}
     <div>
       <img src={repo.image_url} alt={repo.description} />
+      <h1>{repo.project_name}</h1>
+      <span>{repo.description}</span>
     </div>
   {/each}
 </main>
