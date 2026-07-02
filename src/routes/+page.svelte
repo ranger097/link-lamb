@@ -1,13 +1,11 @@
 <script>
-    import Footer from "./Footer.svelte";
-    import Header from "./Header.svelte";
-    import Home from "./Home.svelte";
-    import '/src/main.css';
+  let { data } = $props();
 </script>
 
-<main class="full-site">
-
-    <Header />   
-    <Home />
-    <Footer/>
-    </main>
+<main>
+  {#each data.repos as repo}
+  <div>
+  <img src={repo.image_url} alt={repo.description}/>
+  </div>
+  {/each}
+</main>
