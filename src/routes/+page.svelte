@@ -1,4 +1,6 @@
 <script>
+
+  import Header from './Header.svelte';
   import { onMount } from 'svelte';
   import { supabase } from '$lib/supabaseClient';
 
@@ -11,6 +13,7 @@
 </script>
 
 <main>
+ <Header/> 
   {#each repos as repo}
     <div>
       <img src={repo.image_url} alt={repo.description} />
